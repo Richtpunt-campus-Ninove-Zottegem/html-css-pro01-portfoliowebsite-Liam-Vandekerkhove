@@ -3,18 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title>Liam Van De Kerkhove| Contact pagina</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="Afbeeldingen/favicon.ico">
+    <script src="https://kit.fontawesome.com/c0a9f284a5.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
-    <h2 style="text-decoration: underline;">Contact</h2>
-    <p>Je kan mij op bijna alles bereiken van sociale media.<br> Hieronder zijn er enkele voorbeelden</p>
-    <a href="socialmedia1">Sociale media 1</a><br>
-    <a href="socialmedia2">Sociale media 2</a><br>
-    <a href="socialmedia3">Sociale media 3</a><br>
-    <a href="socialmedia4">Sociale media 4</a><br>
-    <p>Verder kan je me nog bereiken via E-mail en telefoonnummer</p>
-    <p style="text-decoration: gold;">vdk.liam@telenet.be voor privé doeleinden of liam.vandekerkhove@student.richtpuntzottegem.be voor schoolgerelateerde zaken.</p>
-    <p style="text-decoration: brown;"> +32493057373</p>
- 
+
+    <header>
+        <div class="Container">
+            <div class="HeaderLogo">
+                <a href="index.html">
+                    <img src="Afbeeldingen/Alt logo Liam.png">
+                </a>
+        
+            </div><div class="HeaderMenu">
+                <a href="Contact.html">Contact</a>
+                <a href="Overmij.html">Over mij</a>
+                <a href="projecten.html">Mijn Projecten</a>
+                <a href="index.html">Home</a>
+
+            </div>
+        </div>
+    </header>
+    <div class="legeBox"></div>
+    
+    <p class="GroteTiteltekst">Contact</p>
+    <div class="legeBox"></div>
+    
+    <div class="socialmediabox">
+    <div class="socialTitel">Sociale media</div>
+    <table>
+        <tr>
+            <td><i class="fa-brands fa-facebook"></i></td>
+            <td><a href="https://www.facebook.com/liam.vdk/" class="kleinesocial"  target="_blank">Facebook</a></td>
+        </tr>
+        <tr>
+            <td><i class="fa-brands fa-instagram"></i></td>
+            <td><a href="https://www.instagram.com/vdk_liam/"  class="kleinesocial" target="_blank">Instagram</a></td>
+        </tr>
+        <tr>
+            <td><i class="fa-brands fa-pinterest"></i></td>
+            <td><a href="https://www.pinterest.com/vdkliam/"  class="kleinesocial" target="_blank">Pinterest</a></td>
+        </tr>
+        <tr>
+            <td><i class="fa-brands fa-tiktok"></i></td>
+            <td><a href="https://www.tiktok.com/@liam_op_n_50" class="kleinesocial"  target="_blank">TikTok</a></td>
+        </tr>
+    </table>
+</div>
+<div class="socialmediabox2">
+    <div class="socialTitel">E-mail en telefoonnummer</div>
+    <br>
+    <table>
+        <tr>
+            <td><i class="fa-solid fa-envelope"></i></td>
+            <td ><a href="mailto:vdk.liam@telenet.be" class="kleinesocial2" target="_blank">Persoonlijke mail</a></td>
+            </tr>
+            <tr>
+                <td><i class="fa-solid fa-envelope"></i></td>
+            <td><a href="mailto:liam.vandekerkhove@student.richtpuntzottegem.be" class="kleinesocial2" target="_blank" >School mail</a></td>
+            </tr>
+            <tr>
+                <td><i class="fa-solid fa-phone"></i></td>
+    <td><a href="tel:+32493057373" class="kleinesocial2" target="_blank" >+32493057373 </a></td>
+    </table>
+</div>
+
+
+<div class="container2">
+    <form action="https://api.web3forms.com/submit" method="POST">
+
+    <input type="hidden" name="access_key" value="2b1b1a57-5dcd-42e7-acca-163306487a88">
+    
+        <!-- Form Inputs. Each input must have a name="" attribute -->
+        <label for="fname" class="Titeltekst3" >Voornaam</label>
+        <input type="text" name="fname" required class="InnerContact" placeholder="Uw voornaam..">
+       
+        <label for="lname" class="Titeltekst3"  >Achternaam</label>
+         <input type="text" name="lname" required class="InnerContact" placeholder="Uw achternaam..">
+        
+         <label for="country" class="Titeltekst3"  >Land</label> 
+        <select id="country" class="InnerContact" name="country">
+          <option value="australia" class="InnerContact" >Australie</option>
+          <option value="canada" class="InnerContact">Canada</option>
+          <option value="usa" class="InnerContact">USA</option>
+          <option value="belgie" class="InnerContact" >Belgie</option>
+          <option value="nederland" class="InnerContact" >Nederland</option>
+          <option value="frankrijk" class="InnerContact" >Frankrijk</option>
+          <option value="uk" class="InnerContact" >UK</option>
+          <option value="duitsland" class="InnerContact" >Duitsland</option>
+        </select>
+        
+        <label for="email" class="Titeltekst3" >Uw E-mail</label> <br><br>
+        <input type="email" name="email" required class="InnerContact" placeholder="Uw E-mail adress.."><br><br>
+        
+        <label for="message" class="Titeltekst3" >Uw boodschap</label>
+        <textarea name="message" required class="InnerContact" placeholder="Uw boodschap.."></textarea>
+    
+        <!-- Honeypot Spam Protection -->
+        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+    
+        <!-- Custom Confirmation / Success Page -->
+        <!-- <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html"> -->
+
+      <input type="submit"></button>
+  
+    </form>
+  </div>
+<div class="legeBox"></div>
+<div class="legeBox"></div>
+<div class="legeBox"></div>
+<div class="legeBox"></div>
+
+
+<footer>
+        <p> &#169; Liam Van De Kerkhove</p>
+    </footer>
 </body>
 </html>
